@@ -13,10 +13,12 @@ return new class extends Migration
     {
         Schema::create('kasets', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('type');
+            $table->string('content_type');
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      */
